@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+    git submodule update --init --recursive
+
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="nav">
+            <a href="#">Почта</a>
+            <a href="#">Картинки</a>
+            <a href="#"></a>
+            <a href="#"><img
+                    src="https://lh3.googleusercontent.com/ogw/ADGmqu-GKhfv2F2w_deGqUBZU86lCzxjmq7iTmyAdupR=s83-c-mo"
+                    alt=""></a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="logo"><img
+                src="https://lh3.googleusercontent.com/proxy/aWP1WfBsOQuO0tPrWtm6YUe5Alsw6Hx88fPk9_6iooE96vwAs3TsI9fUkz8JjMsNEj-BJj76w6Sa0y9rzFfxcaXRBcwbn08bvfvN_GSjv1R0Kvb6j9XrcLbqQDLAP8hz-QN"
+                alt=""></div>
+        <form name="search">
+            <div class="search"><input type="text" id="search" name="search"/></div>
+            <div class="btn"><input type="submit" name="send" value="Отправить"/></div>
+
+        </form>
+
+
+        <div class="info"><p>Сервисы Google доступны на разных языках: English</p></div>
+    </div>
+    <div class="footer">
+        <div class="left-footer">
+            <a href="#">Все о Google</a>
+            <a href="#">Реклама</a>
+            <a href="#">Для бизнеса</a>
+            <a href="#">Как работает Google поиск</a>
+        </div>
+        <div class="right-footer">
+            <a href="#">Конфидициальность</a>
+            <a href="#">Условия</a>
+            <a href="#">Настройки</a>
+        </div>
+    </div>
+</div>
+<script>
+    let Obj = [{
+        name: "Vasya",
+        age: 14,
+    },
+        {
+            name: "Petya",
+            age: 16,
+        },
+        {
+            name: "Jenya",
+            age: 15,
+        },
+        {
+            name: "Sanya",
+            age: 17,
+        },
+    ]
+
+    function sendForm(e) {
+        alert(Obj[0].name)
+        let input = document.search.search;
+        let val = input.value;
+        if (val === "google") {
+            alert("yandex лучше, но это не точно");
+        } else
+            alert(val);
+    }
+
+    let sendButton = document.search.send;
+    sendButton.addEventListener("click", sendForm);
+</script>
+</body>
+
+</html>

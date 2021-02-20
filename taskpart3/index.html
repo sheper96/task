@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<button onclick="timer()">Программа максимум</button>
+
+<script>
+    let arr = [12,24124,43222254,121,234,121,5452,212,-21,232,434]
+
+    function findMax(arr) {
+        return Math.max(...arr);
+    }
+
+    function timer() {
+        setTimeout(() => {
+            alert(findMax(arr));
+        }, 3000);
+    }
+
+</script>
+</body>
+</html>

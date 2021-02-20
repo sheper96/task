@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button onclick="superSum()">Вычислить</button>
+
+<script>
+    let num1 = Number(prompt('Введите первое число' ));
+    let num2 = Number(prompt('Введите второе число' ));
+
+    function superSum(){
+        alert(num1 + num2)
+    }
+
+    function max(arr){
+        var max = arr[0];
+        for(var i=1; i<arr.length; i++){
+            if(arr[i] > max){
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+
+    function min(arr){
+        var min = arr[0];
+        for(var i=1; i<arr.length; i++){
+            if(arr[i] < min){
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+
+    console.log(min([1,122,92,8,-2,212,67]));
+
+    console.log(max([123,12,3,8,-5,232,22]));
+
+    let a = 1, b = 7;
+    [a, b] = [b, a];
+    console.log(`a ${a}`);
+    console.log(`b ${b}`);
+
+
+</script>
+</body>
+</html>
